@@ -8,6 +8,8 @@ Using Notification Center is pretty simple.
 
 `<script src="notification-center.min.js"></script>`
 
+You'll also need JQuery, and of course, Bootstrap.
+
 **Next**, you need to add the follow HTML to any page where you want notifications to appear:
 
 `<div id="notification-center"></div>`
@@ -20,6 +22,8 @@ sendNotification({
 	type: 'success',
 	contents: 'Hello! I\'m a test notification from a URL Parameter.',
 	customClasses: 'text-center',
+	fadeOut: 5000,
+	dismissable: true
 });
 ```
 
@@ -29,6 +33,8 @@ Here's a rundown of each property included in the argument object:
 - [REQUIRED] type: the type of Bootstrap alert that you're sending. This changes the color of the notification. The values for this can be either 'success','info','warning',or 'danger'
 - [REQUIRED] contents: the text of your notification. This can include HTML.
 - customClasses: custom CSS classes you'd like to add to your notification.
+- fadeOut: the time in ms after which you want your notification to disappear.
+- dismissable: a boolean that sets whether or not your notification should be dismissable. By default, notifications are dismissable.
 
 `param` and `value` are only required if you're triggering your notification through a URL parameter.
 
