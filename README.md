@@ -13,7 +13,7 @@ Using Notification Center is pretty simple.
 `<div id="notification-center"></div>`
 
 **Finally**, call the sendNotification() function. It takes one argument, an object with all of the details for your notification.
-```
+```js
 sendNotification({
   param: 'test',
 	value: 'true',
