@@ -1,5 +1,5 @@
 # Notification Center for Bootstrap
-Super simple notifications with Bootstrap
+Super simple notifications with Bootstrap. At its core, this is a wrapper around Bootstrap alerts that provides an easy way to display them through Javascript.
 
 # Usage
 Using Notification Center is pretty simple. 
