@@ -24,7 +24,6 @@ sendNotification({
 ```
 
 Here's a rundown of each property included in the argument object:
-
 - param: a String containing the URL parameter that triggers your notification.
 - value: a String containing the value for `param` that triggers your notification. 
 - [REQUIRED] type: the type of Bootstrap alert that you're sending. This changes the color of the notification. The values for this can be either 'success','info','warning',or 'danger'
