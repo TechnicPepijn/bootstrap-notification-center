@@ -31,3 +31,5 @@ Here's a rundown of each property included in the argument object:
 - customClasses: custom CSS classes you'd like to add to your notification.
 
 `param` and `value` are only required if you're triggering your notification through a URL parameter.
+
+Check out the examples directory for examples of how all this works, in practice.
