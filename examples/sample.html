@@ -1,0 +1,59 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>Bootstrap Notification Center Demo</title>
+
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+	
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+	
+	<!-- Importing Notification Center -->
+	<script src="notification-center.min.js"></script>
+	
+	<script>
+		$( document ).ready(sendAllNotifications);
+		
+		function sendAllNotifications(){
+			 sendNotification({
+			   param: 'test',
+			   value: 'true',
+			   type: 'success',
+			   contents: '<span class="glyphicon glyphicon-ok-circle" aria-hidden="true"></span> Hello! I\'m a test notification from a URL Parameter.',
+			   customClasses: 'text-center',
+			 });
+	 	}
+	</script>
+	
+  </head>
+  <body>
+	  
+	<div class="container">
+		
+	  <div class="starter-template">
+		<h1>Bootstrap Notification Center Demo</h1>
+		
+		<!--Whereever you put your notification-center div is where notifications will appear-->
+		<div id="notification-center"></div>
+		<p class="lead">Notifications should show up right above me.</p>
+	  </div>
+	  <p><b><a href="?test=true">Try me!</b></a> This will send a notification by setting a URL parameter.</p>
+	  
+	  <button onclick="sendNotification({type: 'warning',fadeOut: 5000, contents: 'Hello! I\'m a test notification from an onclick(). I fade out after 5 seconds.'})" type="button" class="btn btn-default">
+	    Try Me! I send a notification onclick()
+	  </button>
+
+	</div><!-- /.container -->
+  </body>
+</html>
