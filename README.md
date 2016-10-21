@@ -43,3 +43,6 @@ Here's a rundown of each property included in the argument object:
 `param` and `value` are only required if you're triggering your notification through a URL parameter.
 
 Check out the examples directory for examples of how all this works, in practice.
+
+# Etc.
+Thanks to my employer, the [Allstate Compozed Lab](https://github.com/compozed) for allowing me to work on cool projects like this for our open source Fridays. 😎 Bootstrap Notification Center is licensed under the [MIT License](https://github.com/alexarena/notification-center/blob/master/LICENSE).
