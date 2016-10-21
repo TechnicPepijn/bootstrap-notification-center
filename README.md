@@ -1,6 +1,8 @@
 # Notification Center for Bootstrap
 Super simple notifications with Bootstrap. At its core, this is a wrapper around Bootstrap Alerts that provides an easy way to display them through Javascript with goodies like the ability to show notifications based on a URL parameter and to fade out notifications after a set period of time.
 
+# Demo
+
 <img src="https://media.giphy.com/media/3oz8xV3ZWCoPQaASTm/giphy.gif"></img>
 
 # Usage
